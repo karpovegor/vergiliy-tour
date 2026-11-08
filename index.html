@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Project Title -->
+    <title>Abdelrahman</title>
+    <!-- Start Link CSS Sheets -->
+    <!-- Normalize Sheet -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Default Sheet for Page -->
+    <link rel="stylesheet" href="css/abdelrahman.css">
+    <!-- Font Awesome Sheet -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- End Link CSS Sheets -->
+    <!-- Start Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Lalezar&family=Lora:wght@400;500;600&family=Nunito:wght@200;400;600&family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" 
+    rel="stylesheet"
+    >
+    <!-- End Google Fonts -->
+</head>
+<body>
+    <!-- Start Header -->
+    <div class="header" id="header">
+        <div class="container">
+            <a href="#" class="logo">Вергилий</a>
+            <ul class="main-nav">
+               <li><a href="index.html">Главная</a></li>
+               
+            <li><a href="countries.html">Страны</a></li>
+    
+            <li><a href="team.html">Команда</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="games.html">Промо-игры</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+               </div>  
+                    
+                  
+    <!-- Start Landing -->
+    <div class="landing">
+    <div class="container">
+        <div class="text">
+            <h1>Вена — Прага: культурное наследие</h1>
+            <p>Единственный тур, который проводит по домам-музеям Кафки, Музиля, Гофмансталя и Мухи с русскоговорящим гидом-искусствоведом.</p>
+            <a href="contacts.html" style="display: inline-block; margin-top: 20px; padding: 12px 24px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">Забронировать тур</a>
+        </div>
+        
+        <div class="image">
+            <img src="imgs/castle.jpg" alt="Вена и Прага">
+        </div>
+    </div>
+</div>
+        <a href="#articles" class="go-down" title="articles">
+            <i class="fas fa-angle-double-down fa-2x"></i>
+        </a>
+    </div>
+    <!-- End Landing -->
+     <!-- Start Events -->
+<div class="events-section" style="padding: 60px 0; background-color: #f8f9fa;">
+    <div style="width: 90%; max-width: 1200px; margin: 0 auto;">
+        
+        <h2 class="main-title" style="text-align: center; margin-bottom: 50px; font-size: 36px; color: #333;">Самые популярные предложения</h2>
+        
+        <div class="events-grid">
+            
+            <!-- Событие 1 (Без ссылки на about.html) -->
+            <div class="event-card">
+                <img src="imgs/event1.jpg" alt="Выставка Роберто Диаса" class="event-img">
+                <div class="event-content">
+                    <h3>Тур выходного дня</h3>
+                    <p>На выставку картин Роберто Диаса.</p>
+                    <div class="event-price">56 650 руб.</div>
+                    <!-- Кнопки нет, тур независимый -->
+                </div>
+            </div>
+
+            <!-- Событие 2 (Без ссылки на about.html) -->
+            <div class="event-card">
+                <img src="imgs/event2.jpg" alt="Выставка Бексиньского" class="event-img">
+                <div class="event-content">
+                    <h3>Тур выходного дня</h3>
+                    <p>На выставку картин Бексиньского.</p>
+                    <div class="event-price">30 050 руб.</div>
+                    <!-- Кнопки нет, тур независимый -->
+                </div>
+            </div>
+
+            <!-- Событие 3 (Наш основной тур со ссылкой) -->
+            <div class="event-card">
+                <img src="imgs/event3.jpg" alt="Чешский и австрийский модерн" class="event-img">
+                <div class="event-content">
+                    <h3>Тур по деятелям модерна</h3>
+                    <p>Чешский и австрийский модерн. 7 дней / 6 ночей.</p>
+                    <div class="event-price">690 000 руб.</div>
+                    
+                    <!-- ВОТ ЗДЕСЬ ДОБАВЛЕНА ССЫЛКА НА ПРОГРАММУ ПО ДНЯМ -->
+                    <a href="about.html" style="display: block; text-align: center; margin-top: 15px; padding: 12px; background: #007bff; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background 0.3s;">Посмотреть программу по дням</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Стили оставляем без изменений -->
+<style>
+    .events-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    .event-card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        transition: transform 0.3s, box-shadow 0.3s;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height: 100%;
+    }
+    .event-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    .event-img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+    .event-content {
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    .event-content h3 {
+        color: #333;
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .event-content p {
+        color: #666;
+        line-height: 1.5;
+        font-size: 15px;
+        margin-bottom: 20px;
+        flex-grow: 1;
+    }
+    .event-price {
+        font-size: 22px;
+        font-weight: bold;
+        color: #007bff;
+        border-top: 1px solid #eee;
+        padding-top: 15px;
+    }
+    @media (max-width: 992px) { .events-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 768px) { .events-grid { grid-template-columns: 1fr; } }
+</style>
+<!-- End Events -->
+     <!-- Start Unique -->
+<div class="unique-section" style="padding: 60px 0; background-color: #ffffff;">
+    <div style="width: 90%; max-width: 1200px; margin: 0 auto;">
+        <h2 class="main-title" style="text-align: center; margin-bottom: 20px; font-size: 36px; color: #333;">Почему выбирают нас</h2>
+        <p style="text-align: center; color: #666; font-size: 18px; margin-bottom: 50px; max-width: 800px; margin-left: auto; margin-right: auto;">
+            Мы создали тур, аналогов которому нет на российском рынке. Это не стандартная обзорная экскурсия, а глубокое погружение в культуру и искусство.
+        </p>
+        
+        <div class="unique-grid">
+            
+            <!-- Пункт 1 -->
+            <div class="unique-card">
+                <div class="unique-icon">👥</div>
+                <h3>Малая группа</h3>
+                <p>Максимум 8 человек в группе. Вы не будете стоять в очереди за гидом и сможете задать любой вопрос. Экскурсия превращается в живой диалог.</p>
+            </div>
+
+            <!-- Пункт 2 -->
+            <div class="unique-card">
+                <div class="unique-icon">🎨</div>
+                <h3>Гид-искусствовед</h3>
+                <p>На всем маршруте с вами будет русскоговорящий искусствовед, который откроет скрытые смыслы картин Климта, Шиле и Мухи.</p>
+            </div>
+
+            <!-- Пункт 3 -->
+            <div class="unique-card">
+                <div class="unique-icon">🏛️</div>
+                <h3>Эксклюзивные локации</h3>
+                <p>Мы посещаем дома-музеи Кафки, Музиля, Гофмансталя и Мухи — объекты, до которых обычно не доходят стандартные туристические группы.</p>
+            </div>
+
+            <!-- Пункт 4 -->
+            <div class="unique-card">
+                <div class="unique-icon">🏨</div>
+                <h3>Премиальный отдых</h3>
+                <p>Проживание в отелях Hilton 4* (Вена) и Design Grandium 5* (Прага). Питание в лучших аутентичных ресторанах, а не в туристических столовых.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    .unique-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+        gap: 30px;
+    }
+
+    .unique-card {
+        background: #f8f9fa;
+        padding: 40px 30px;
+        border-radius: 12px;
+        text-align: center;
+        transition: all 0.3s ease;
+        border: 1px solid #eee;
+    }
+
+    .unique-card:hover {
+        background: #ffffff;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        transform: translateY(-5px);
+        border-color: #007bff;
+    }
+
+    .unique-icon {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .unique-card h3 {
+        color: #333;
+        font-size: 22px;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .unique-card p {
+        color: #555;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        .unique-grid {
+            grid-template-columns: 1fr; /* 1 колонка на телефонах */
+        }
+    }
+</style>
+<!-- End Unique -->
+   

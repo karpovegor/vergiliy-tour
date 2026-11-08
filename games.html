@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Project Title -->
+    <title>Abdelrahman</title>
+    <!-- Start Link CSS Sheets -->
+    <!-- Normalize Sheet -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Default Sheet for Page -->
+    <link rel="stylesheet" href="css/abdelrahman.css">
+    <!-- Font Awesome Sheet -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- End Link CSS Sheets -->
+    <!-- Start Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Lalezar&family=Lora:wght@400;500;600&family=Nunito:wght@200;400;600&family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" 
+    rel="stylesheet"
+    >
+    <!-- End Google Fonts -->
+</head>
+<body>
+    <!-- Start Header -->
+    <div class="header" id="header">
+        <div class="container">
+            <a href="#" class="logo">Вергилий</a>
+            <ul class="main-nav">
+               <li><a href="index.html">Главная</a></li>
+               
+            <li><a href="countries.html">Страны</a></li>
+             
+            <li><a href="team.html">Команда</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="games.html">Промо-игры</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+               </div>  
+               <!-- Start Games -->
+<div class="games-section" style="padding: 60px 0; background-color: #f0f4f8;">
+    <div style="width: 90%; max-width: 800px; margin: 0 auto;">
+        
+        <h2 class="main-title" style="text-align: center; margin-bottom: 20px; font-size: 36px; color: #333;">Культурный код</h2>
+        <p style="text-align: center; color: #666; margin-bottom: 40px; font-size: 18px;">Проверьте свои знания о Вене и Праге и получите 20 баллов!</p>
+
+        <div id="quiz-container" style="background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            <div id="quiz"></div>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <button id="submit" style="padding: 15px 40px; cursor: pointer; background-color: #007bff; color: white; border: none; border-radius: 5px; font-size: 18px; font-weight: bold; transition: background 0.3s;">Проверить ответы</button>
+            </div>
+            
+            <h3 id="results" style="text-align: center; margin-top: 30px; color: #28a745; font-size: 22px;"></h3>
+        </div>
+
+    </div>
+</div>
+
+<style>
+    /* Стили для вопросов викторины */
+    .question {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #333;
+    }
+    .answers label {
+        display: block;
+        padding: 12px 15px;
+        margin-bottom: 10px;
+        background: #f8f9fa;
+        border-radius: 8px;
+        cursor: pointer;
+        border: 1px solid #ddd;
+        transition: background 0.2s;
+    }
+    .answers label:hover {
+        background: #e9ecef;
+    }
+    .answers input[type="radio"] {
+        margin-right: 10px;
+        transform: scale(1.2);
+    }
+    /* Стили для формы оффлайн-игры */
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        color: #333;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .form-group input, 
+    .form-group textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-family: inherit;
+        font-size: 15px;
+        transition: border-color 0.3s;
+    }
+    .form-group input:focus, 
+    .form-group textarea:focus {
+        outline: none;
+        border-color: #007bff;
+    }
+    .btn-submit {
+        width: 100%;
+        padding: 15px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin-top: 10px;
+    }
+    .btn-submit:hover {
+        background: #0056b3;
+    }
+</style>
+<!-- End Games -->
+ <script src="js/script.js"></script>
+</body>
+</html>
+ <!-- Оффлайн игра: Гастрономический вызов -->
+        <div style="margin-top: 80px; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            <h2 style="text-align: center; margin-bottom: 20px; font-size: 32px; color: #333;">Оффлайн-игра: Гастрономический вызов</h2>
+            
+            <p style="text-align: center; color: #555; font-size: 18px; line-height: 1.6; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                После заполнения формы и регистрации заявки на сайте, вы можете посетить ресторан <b>Triton Restaurant</b>. Там вам завяжут глаза, и вы должны будете угадать все ингредиенты блюда. По результатам вашего ответа вам будут начислены балы, которые вы можете потратить на различные услуги.
+            </p>
+
+            <!-- Форма регистрации -->
+            <form onsubmit="event.preventDefault(); alert('Заявка успешно отправлена! Мы свяжемся с вами для подтверждения бронирования.');" style="max-width: 600px; margin: 0 auto;">
+                
+                <div class="form-group">
+                    <label>ФИО</label>
+                    <input type="text" placeholder="Иванов Иван Иванович" required>
+                </div>
+
+                <div class="form-group">
+                    <label>В какой стране и городе ваш отдых</label>
+                    <input type="text" placeholder="Например: Чехия, Прага" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Даты</label>
+                    <input type="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Аллергия на продукты или ограничения по здоровью</label>
+                    <textarea rows="3" placeholder="Если нет, напишите 'Нет'" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Зарегистрироваться на игру</button>
+            </form>
+        </div>

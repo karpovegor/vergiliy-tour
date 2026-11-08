@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Project Title -->
+    <title>Abdelrahman</title>
+    <!-- Start Link CSS Sheets -->
+    <!-- Normalize Sheet -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Default Sheet for Page -->
+    <link rel="stylesheet" href="css/abdelrahman.css">
+    <!-- Font Awesome Sheet -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- End Link CSS Sheets -->
+    <!-- Start Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Lalezar&family=Lora:wght@400;500;600&family=Nunito:wght@200;400;600&family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" 
+    rel="stylesheet"
+    >
+    <!-- End Google Fonts -->
+</head>
+<body>
+    <!-- Start Header -->
+    <div class="header" id="header">
+        <div class="container">
+            <a href="#" class="logo">Вергилий</a>
+            <ul class="main-nav">
+               <li><a href="index.html">Главная</a></li>
+               
+            <li><a href="about.html">О туре</a></li>
+            
+            <li><a href="team.html">Команда</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="games.html">Промо-игры</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+               </div>  
+<!-- Start Unique -->
+<div class="unique-section" style="padding: 60px 0; background-color: #ffffff;">
+    <div style="width: 90%; max-width: 1200px; margin: 0 auto;">
+        <h2 class="main-title" style="text-align: center; margin-bottom: 20px; font-size: 36px; color: #333;">Почему выбирают нас</h2>
+        <p style="text-align: center; color: #666; font-size: 18px; margin-bottom: 50px; max-width: 800px; margin-left: auto; margin-right: auto;">
+            Мы создали тур, аналогов которому нет на российском рынке. Это не стандартная обзорная экскурсия, а глубокое погружение в культуру и искусство.
+        </p>
+        
+        <div class="unique-grid">
+            
+            <!-- Пункт 1 -->
+            <div class="unique-card">
+                <div class="unique-icon">👥</div>
+                <h3>Малая группа</h3>
+                <p>Максимум 8 человек в группе. Вы не будете стоять в очереди за гидом и сможете задать любой вопрос. Экскурсия превращается в живой диалог.</p>
+            </div>
+
+            <!-- Пункт 2 -->
+            <div class="unique-card">
+                <div class="unique-icon">🎨</div>
+                <h3>Гид-искусствовед</h3>
+                <p>На всем маршруте с вами будет русскоговорящий искусствовед, который откроет скрытые смыслы картин Климта, Шиле и Мухи.</p>
+            </div>
+
+            <!-- Пункт 3 -->
+            <div class="unique-card">
+                <div class="unique-icon">🏛️</div>
+                <h3>Эксклюзивные локации</h3>
+                <p>Мы посещаем дома-музеи Кафки, Музиля, Гофмансталя и Мухи — объекты, до которых обычно не доходят стандартные туристические группы.</p>
+            </div>
+
+            <!-- Пункт 4 -->
+            <div class="unique-card">
+                <div class="unique-icon">🏨</div>
+                <h3>Премиальный отдых</h3>
+                <p>Проживание в отелях Hilton 4* (Вена) и Design Grandium 5* (Прага). Питание в лучших аутентичных ресторанах, а не в туристических столовых.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    .unique-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+        gap: 30px;
+    }
+
+    .unique-card {
+        background: #f8f9fa;
+        padding: 40px 30px;
+        border-radius: 12px;
+        text-align: center;
+        transition: all 0.3s ease;
+        border: 1px solid #eee;
+    }
+
+    .unique-card:hover {
+        background: #ffffff;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        transform: translateY(-5px);
+        border-color: #007bff;
+    }
+
+    .unique-icon {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .unique-card h3 {
+        color: #333;
+        font-size: 22px;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .unique-card p {
+        color: #555;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        .unique-grid {
+            grid-template-columns: 1fr; /* 1 колонка на телефонах */
+        }
+    }
+</style>
+<!-- End Unique -->

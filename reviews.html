@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Project Title -->
+    <title>Abdelrahman</title>
+    <!-- Start Link CSS Sheets -->
+    <!-- Normalize Sheet -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Default Sheet for Page -->
+    <link rel="stylesheet" href="css/abdelrahman.css">
+    <!-- Font Awesome Sheet -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- End Link CSS Sheets -->
+    <!-- Start Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Lalezar&family=Lora:wght@400;500;600&family=Nunito:wght@200;400;600&family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" 
+    rel="stylesheet"
+    >
+    <!-- End Google Fonts -->
+</head>
+<body>
+    <!-- Start Header -->
+    <div class="header" id="header">
+        <div class="container">
+            <a href="#" class="logo">Вергилий</a>
+            <ul class="main-nav">
+               <li><a href="index.html">Главная</a></li>
+               
+            <li><a href="countries.html">Страны</a></li>
+            
+            <li><a href="team.html">Команда</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="games.html">Промо-игры</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+               </div>  
+               <!-- Start Reviews -->
+<div class="reviews-section" style="padding: 60px 0; background-color: #f8f9fa;">
+    <div style="width: 90%; max-width: 1000px; margin: 0 auto;">
+        
+        <h2 class="main-title" style="text-align: center; margin-bottom: 40px; font-size: 36px; color: #333;">Интерактивная доска отзывов</h2>
+        
+        <!-- Форма добавления отзыва -->
+        <div style="background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); margin-bottom: 50px;">
+            <h3 style="margin-top: 0; margin-bottom: 20px; color: #333;">Оставьте свой отзыв</h3>
+            <form id="review-form">
+                <div class="form-group">
+                    <label>ФИО</label>
+                    <input type="text" id="rev-name" placeholder="Иванов Иван" required>
+                </div>
+                <div class="form-group">
+                    <label>Куда ездили?</label>
+                    <input type="text" id="rev-destination" placeholder="Например: Вена — Прага" required>
+                </div>
+                <div class="form-group">
+                    <label>Комментарий</label>
+                    <textarea id="rev-comment" rows="4" placeholder="Поделитесь вашими впечатлениями..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Отправить отзыв</button>
+            </form>
+        </div>
+
+        <!-- Свободное поле для отзывов -->
+        <h3 style="text-align: center; margin-bottom: 30px; color: #333; font-size: 28px;">Отзывы клиентов</h3>
+        <div id="reviews-container" style="display: flex; flex-direction: column; gap: 20px;">
+            
+            <!-- Стартовые отзывы, чтобы доска не была пустой -->
+            <div class="review-card">
+                <div class="review-header">
+                    <b>Елена Смирнова</b> <span class="review-dest">Вена — Прага</span>
+                </div>
+                <p class="review-text">Это было потрясающе! Обычно в турах бегаешь галопом, а здесь было именно погружение. Дома-музеи Кафки и Мухи — это что-то невероятное!</p>
+            </div>
+            
+            <div class="review-card">
+                <div class="review-header">
+                    <b>Дмитрий Волков</b> <span class="review-dest">Вена — Прага</span>
+                </div>
+                <p class="review-text">Очень крутая программа. Маленькая группа — это огромный плюс, чувствуешь себя гостем, а не туристом. Отели премиум-класса!</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        color: #333;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .form-group input, 
+    .form-group textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-family: inherit;
+        font-size: 15px;
+        transition: border-color 0.3s;
+    }
+    .form-group input:focus, 
+    .form-group textarea:focus {
+        outline: none;
+        border-color: #007bff;
+    }
+    .btn-submit {
+        width: 100%;
+        padding: 15px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    .btn-submit:hover {
+        background: #0056b3;
+    }
+
+    /* Стили для карточек отзывов */
+    .review-card {
+        background: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        border-left: 5px solid #007bff;
+    }
+    .review-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+    .review-header b {
+        color: #333;
+        font-size: 18px;
+    }
+    .review-dest {
+        background: #e9ecef;
+        color: #555;
+        padding: 4px 10px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .review-text {
+        color: #555;
+        line-height: 1.6;
+        margin: 0;
+        font-style: italic;
+    }
+</style>
+<!-- End Reviews -->

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Project Title -->
+    <title>Abdelrahman</title>
+    <!-- Start Link CSS Sheets -->
+    <!-- Normalize Sheet -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Default Sheet for Page -->
+    <link rel="stylesheet" href="css/abdelrahman.css">
+    <!-- Font Awesome Sheet -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- End Link CSS Sheets -->
+    <!-- Start Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Lalezar&family=Lora:wght@400;500;600&family=Nunito:wght@200;400;600&family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" 
+    rel="stylesheet"
+    >
+    <!-- End Google Fonts -->
+</head>
+<body>
+    <!-- Start Header -->
+    <div class="header" id="header">
+        <div class="container">
+            <a href="#" class="logo">Вергилий</a>
+            <ul class="main-nav">
+               <li><a href="index.html">Главная</a></li>
+               
+            <li><a href="countries.html">Страны</a></li>
+            
+            <li><a href="team.html">Команда</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="games.html">Промо-игры</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+               </div>  
+              <!-- Start Team -->
+<div class="team-section" style="padding: 60px 0; background-color: #f8f9fa;">
+    <div style="width: 90%; max-width: 1200px; margin: 0 auto;">
+        
+        <!-- Блок создателей -->
+        <h2 class="main-title" style="text-align: center; margin-bottom: 20px; font-size: 36px; color: #333;">Основатели проекта</h2>
+        <p style="text-align: center; color: #666; margin-bottom: 40px; font-size: 18px;">Те, кто разработал этот уникальный маршрут</p>
+        
+        <div class="team-grid" style="margin-bottom: 60px;">
+            <!-- Егор -->
+            <div class="team-card">
+                <img src="imgs/egor.jpg" alt="Егор Карпов" class="team-photo">
+                <h3>Егор Карпов</h3>
+                <p class="role">Разработчик сайта и турпродукта</p>
+                <p>Отвечает за техническую часть, функционал сайта и общую концепцию тура.</p>
+            </div>
+
+            <!-- Александр -->
+            <div class="team-card">
+                <img src="imgs/alexander.jpg" alt="Александр Кудаковский" class="team-photo">
+                <h3>Александр Кудаковский</h3>
+                <p class="role">Специалист по логистике</p>
+                <p>Прорабатывает маршруты, бронирование отелей и партнерские соглашения.</p>
+            </div>
+
+            <!-- Глеб -->
+            <div class="team-card">
+                <img src="imgs/gleb.jpg" alt="Глеб Елесин" class="team-photo">
+                <h3>Глеб Елесин</h3>
+                <p class="role">Аналитик и маркетолог</p>
+                <p>Занимался SWOT-анализом, ценообразованием и продвижением продукта.</p>
+            </div>
+        </div>
+
+        <!-- Блок партнеров и персонажей (те, что были) -->
+        <h2 class="main-title" style="text-align: center; margin-bottom: 40px; font-size: 36px; color: #333;">Наши эксперты и партнеры</h2>
+        
+        <div class="team-grid">
+            <!-- Анна -->
+            <div class="team-card">
+                <div class="avatar" style="background-color: #007bff;">А</div>
+                <h3>Анна Иванова</h3>
+                <p class="role">Гид-искусствовед</p>
+                <p>Специалист по австрийскому модерну. Проведет вас по самым закрытым залам музеев.</p>
+            </div>
+
+            <!-- Kaiser Tours -->
+            <div class="team-card">
+                <div class="avatar" style="background-color: #28a745;">К</div>
+                <h3>Kaiser Tours</h3>
+                <p class="role">Партнер в Австрии</p>
+                <p>Наша надежная принимающая сторона в Вене. Обеспечивает премиальные трансферы.</p>
+            </div>
+
+            <!-- Respublika.CZ -->
+            <div class="team-card">
+                <div class="avatar" style="background-color: #dc3545;">R</div>
+                <h3>Respublika.CZ</h3>
+                <p class="role">Партнер в Чехии</p>
+                <p>Эксперты по Праге. Отвечают за экскурсии, проживание и визовую поддержку.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<style>
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+        gap: 30px;
+    }
+    .team-card {
+        background: #fff;
+        padding: 40px 30px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        transition: transform 0.3s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    
+    /* Стили для фото основателей */
+    .team-photo {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%; /* Делает фото круглым */
+        object-fit: cover; /* Чтобы фото не искажалось */
+        margin-bottom: 20px;
+        border: 4px solid #f0f4f8; /* Красивая рамка вокруг фото */
+    }
+
+    /* Стили для буквенных аватарок */
+    .avatar {
+        width: 120px;
+        height: 120px;
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .team-card h3 {
+        margin: 0 0 5px 0;
+        color: #333;
+        font-size: 20px;
+    }
+    .team-card .role {
+        color: #007bff;
+        font-weight: bold;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+    .team-card p:last-child {
+        color: #666;
+        line-height: 1.5;
+        font-size: 14px;
+        margin: 0;
+    }
+    
+    /* Адаптивность для телефонов */
+    @media (max-width: 992px) {
+        .team-grid { grid-template-columns: repeat(2, 1fr); } /* На планшетах по 2 */
+    }
+    @media (max-width: 768px) {
+        .team-grid { grid-template-columns: 1fr; } /* На телефонах по 1 */
+    }
+</style>
+<!-- End Team -->
